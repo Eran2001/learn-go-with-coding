@@ -5,13 +5,10 @@ import (
 )
 
 func main() {
-	var x any = "Era"
-
-	str, ok := x.(string)
-
-	if ok {
-		fmt.Println(str, "is a string")
+	name := "e"
+	if n := len(name); n == 0 {
+		fmt.Println("No name provided")
 	} else {
-		fmt.Println("Not a string")
+		fmt.Println("Hello", name)
 	}
 }
