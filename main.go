@@ -5,11 +5,13 @@ import (
 )
 
 func main() {
-    score := 85
+	var x any = "Era"
 
-    if score >= 90 {
-        fmt.Println("A")
-    } else {
-        fmt.Println("F")
-    }
+	str, ok := x.(string)
+
+	if ok {
+		fmt.Println(str, "is a string")
+	} else {
+		fmt.Println("Not a string")
+	}
 }
